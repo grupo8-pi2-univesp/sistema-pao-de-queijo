@@ -472,6 +472,13 @@
         table:has(#tabela-movimentacoes) tbody td:nth-child(6) {
             text-align: center !important;
         }
+
+        /* Melhor leitura dos preços em telas pequenas */
+        @media (max-width: 390px) {
+            #tabela-produtos-estoque td:nth-child(3) {
+                white-space: nowrap;
+            }
+        }
     </style>
 
 </head>
@@ -539,7 +546,7 @@
             </div>
 
 
-            <table>
+            <table id="tabela-produtos-estoque">
 
                 <thead>
                     <tr>
